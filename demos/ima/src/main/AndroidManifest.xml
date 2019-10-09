@@ -21,7 +21,7 @@
   <uses-sdk/>
 
   <application android:label="@string/application_name" android:icon="@mipmap/ic_launcher"
-      android:largeHeap="true" android:allowBackup="false">
+      android:largeHeap="true" android:allowBackup="false" android:usesCleartextTraffic="true">
 
     <activity android:name="com.google.android.exoplayer2.imademo.MainActivity"
         android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"

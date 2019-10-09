@@ -17,6 +17,8 @@ package com.google.android.exoplayer2.imademo;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
+import android.view.ViewGroup;
 import com.google.android.exoplayer2.ExoPlayer;
 import com.google.android.exoplayer2.ui.PlayerView;
 
@@ -28,19 +30,24 @@ public final class MainActivity extends Activity {
 
   private PlayerView playerView;
   private PlayerManager player;
-
+  // The container for the ad's UI.
+  private ViewGroup mAdUiContainer;
+  // The play button to trigger the ad request.
+  private View mPlayButton;
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.main_activity);
     playerView = findViewById(R.id.player_view);
+    mAdUiContainer = findViewById(R.id.videoPlayerWithAdPlayback);
+    mPlayButton = findViewById(R.id.playButton);
     player = new PlayerManager(this);
   }
 
   @Override
   public void onResume() {
     super.onResume();
-    player.init(this, playerView);
+    player.init(this, playerView,mAdUiContainer,mPlayButton);
   }
 
   @Override
