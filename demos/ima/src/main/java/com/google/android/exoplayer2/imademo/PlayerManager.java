@@ -71,7 +71,7 @@ import com.google.android.exoplayer2.util.Util;
     player.seekTo(contentPosition);
     player.prepare(mediaSourceWithAds);
     player.setPlayWhenReady(true);
-    Log.e("Sunil","Sunil");
+    Log.e("Sunil","Sunil1");
   }
 
   public void reset() {
