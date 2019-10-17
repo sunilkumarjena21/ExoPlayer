@@ -32,6 +32,7 @@ import com.google.android.exoplayer2.source.smoothstreaming.SsMediaSource;
 import com.google.android.exoplayer2.ui.PlayerView;
 import com.google.android.exoplayer2.upstream.DataSource;
 import com.google.android.exoplayer2.upstream.DefaultDataSourceFactory;
+import com.google.android.exoplayer2.util.Log;
 import com.google.android.exoplayer2.util.Util;
 
 /** Manages the {@link ExoPlayer}, the IMA plugin and all video playback. */
@@ -70,6 +71,7 @@ import com.google.android.exoplayer2.util.Util;
     player.seekTo(contentPosition);
     player.prepare(mediaSourceWithAds);
     player.setPlayWhenReady(true);
+    Log.e("Sunil","Sunil");
   }
 
   public void reset() {
