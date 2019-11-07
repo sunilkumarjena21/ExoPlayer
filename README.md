@@ -137,6 +137,6 @@ implementation project(':exoplayer-library-ui')
 * The `release-v2` branch holds the most recent release.
 
 #### Using Android Studio ####
-
+ 
 To develop ExoPlayer using Android Studio, simply open the ExoPlayer project in
 the root directory of the repository.
